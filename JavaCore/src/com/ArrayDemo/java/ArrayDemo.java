@@ -11,5 +11,6 @@ public class ArrayDemo {
 		intArray1 = new int[5];
 		intArray1[4] = 5;
 		System.out.println(intArray1[4]);
+		System.out.println(intArray1[4]);
 	}
 }
