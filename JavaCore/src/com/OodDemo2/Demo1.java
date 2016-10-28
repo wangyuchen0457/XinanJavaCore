@@ -6,8 +6,8 @@ public Demo1(){
 }
 
 public static void main(String[] args) {
-    Demo demo2=new Demo2();	
-    Demo demo3= demo2;
+  //  Demo demo2=new Demo2();	
+   // Demo demo3= demo2;
 
 }
 }

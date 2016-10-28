@@ -1,7 +1,5 @@
 package com.OodDemo;
 
-import lombok.Setter;
-
 public class Circle {
 	double radius = 0;
 	public Circle() {

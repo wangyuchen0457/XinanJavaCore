@@ -1,11 +1,11 @@
 package com.OodDemo2;
 
 public class Police extends Human {
-
+/*
 	private String id;
 	private String name;
 	private Integer age;
-	static String WORK="working";
+	static String WORK="working";*/
 	//class worker1{
 /*	public static void main(String[] args) {
 		WORK="worker";

@@ -4,7 +4,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		Human human1 = new Police();
-		Human human2 = new Worker();
+	//	Human human2 = new Worker();
 
 		Police police = (Police) human1;
 		System.out.println(police);

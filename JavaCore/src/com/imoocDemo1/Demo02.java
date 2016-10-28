@@ -16,8 +16,8 @@ public class Demo02 {// 外部类
 	}
 
 	public static void main(String[] args) {
-		Demo02 hello = new Demo02();
-		Demo002 hello2 = hello.new Demo002();
+		//Demo02 hello = new Demo02();
+		//Demo002 hello2 = hello.new Demo002();
 		/*hello.show();*/
 	}
 }

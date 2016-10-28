@@ -1,9 +1,9 @@
 package com.OodDemo2;
 
 public class Farmer {
-	private String id;
+/*	private String id;
 	private String name;
-	private Integer age;
+	private Integer age;*/
 	static  String WORK = "WORKING";
 
 	/**
@@ -29,7 +29,7 @@ public class Farmer {
 	public static void main(String[] args) {
 		System.out.println(Farmer.WORK);
 		Farmer.work();
-		Farmer farmer = new Farmer();
+	//	Farmer farmer = new Farmer();
 		Farmer.setWORK("************");
 		System.out.println(Farmer.WORK);
 
