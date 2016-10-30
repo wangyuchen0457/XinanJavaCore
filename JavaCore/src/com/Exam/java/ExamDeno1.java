@@ -38,7 +38,6 @@ public class ExamDeno1 {
 			for (int i = 0; i < rank; i++) {
 				int xing = i * (line - 1) / (rank - 1) + 1;
 				// 首先打印空格
-
 				for (int j = 0; j <= ((line - xing) / 2); j++) {
 					System.out.print(" ");
 				}
@@ -72,7 +71,6 @@ public class ExamDeno1 {
 				// 最后记得在一行输入完毕后需要换行
 				System.out.println();
 			}
-
 		}
 		// 打印空心等腰三角形(空心三角形行列形状与相同行列实心三角形相同，列数为实际显示列数的2倍减1)
 		else if (type == 3) {
@@ -119,7 +117,7 @@ public class ExamDeno1 {
 				for (int a = xing; a > 2; a--) {
 					System.out.print(" ");
 				}
-				if (i != rank - 1)//如果不是最后一行 末尾加一个*
+				if (i != rank - 1)//如果不是最后一行 末尾加一个*.
 					System.out.print("*");
 				// 最后记得在一行输入完毕后需要换行
 				System.out.println();
