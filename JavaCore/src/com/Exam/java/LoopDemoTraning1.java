@@ -1,4 +1,4 @@
-package com.LoopDemo.java;
+package com.Exam.java;
 
 import java.io.PrintStream;
 import java.util.Scanner;
