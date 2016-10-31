@@ -2,7 +2,7 @@ package com.Exam.java;
 
 import java.io.PrintStream;
 import java.util.Scanner;
-public class LoopDemoTraning1 {
+public class mathExam {
 	private static Scanner input;
 
 	public static void main(String[] args) {

@@ -4,24 +4,25 @@ import java.util.Scanner;
 
 public class ExamDeno1 {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
-		// 创建一个输入对象，用来接收输入行数
-		Scanner inScanner = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		// 提示键盘输入
 		System.out.println("请选择想要显示的三角形类型！" + "\n" + "1、实心等腰三角形  2、倒置实心等腰三角形 3、空心等腰三角形 4、倒置空心 等腰三角形");
-		int type = inScanner.nextInt();
+		int type = scan.nextInt();
 		if (type != 1 && type != 2 && type != 3 && type != 4) {
 			System.out.println("输入错误！");
 			return;
 		}
-		System.out.print("请输入行数：");
-		int line = inScanner.nextInt();
+		System.out.print("请输入一个大与1的行数：");
+	    int line = scan.nextInt();
 		if (line <= 1) {
 			System.out.println("请输入大于1的行数！");
 			return;
 		}
-		System.out.print("请输入列数：");
-		int rank = inScanner.nextInt();
+		System.out.print("请输入一个大于1的列数：");
+		int rank = scan.nextInt();
 		if (rank <= 1) {
 			System.out.println("请输入大于1的列数！");
 			return;

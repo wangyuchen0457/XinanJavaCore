@@ -2,16 +2,18 @@ package com.Exam.java;
 
 import java.util.Scanner;
 public class ExamDemo2 {
+	private static Scanner scan;
+
 	public static void main(String[] args) {
-		Scanner inScanner = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		System.out.print("请输入行数：");
-	     int rank = inScanner.nextInt();
+	     int rank = scan.nextInt();
 	     if(rank<=1){
 	     	System.out.println("请输入大于1的行数");
 	     	return;
 	     }
 	     System.out.print("请输入列数：");
-	     int line = inScanner.nextInt();
+	     int line = scan.nextInt();
 	     if((line%2)==0){
 	     	System.out.println("列数请输入奇数！");
 	     	//return;

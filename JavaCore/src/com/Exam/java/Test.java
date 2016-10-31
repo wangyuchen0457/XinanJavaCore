@@ -6,7 +6,7 @@ package com.Exam.java;
 
 public class Test {
 	public static void main(String[] args) {
-		double[] demo={11,2,3,4,5,6,7,8,9,10};		
+		double[] demo={11,4,3,4,5,6,7,8,9,10};		
 		double max=demo[0];
 		double min=demo[0];
 		for (double d : demo) {
@@ -15,7 +15,6 @@ public class Test {
 		     }else if(d<min){
 		    	 min=d;
 		     } 
-		    	 
 		     }
 		double avg=(max+min)/2;
 		System.out.println(avg);
