@@ -33,7 +33,7 @@ public class ExamDeno1 {
 		if ((((line - 1) / (rank - 1) % 2) != 0) || (rank > line) || (line % 2) == 0) {
 			System.out.println("显示问题导致无法正常显示为等腰三角形！");
 		}
-		if (type == 1) {// 打印实心等腰三角形
+		if (type == 1) {// 打印实心等腰三角形f
 
 			for (int i = 0; i < rank; i++) {
 				int xing = i * (line - 1) / (rank - 1) + 1;
