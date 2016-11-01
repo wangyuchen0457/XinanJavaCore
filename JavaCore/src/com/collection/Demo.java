@@ -22,5 +22,4 @@ public class Demo {
          intSet.add(1);
          System.out.println("intSet: " + intSet);
 	}
-
 }
