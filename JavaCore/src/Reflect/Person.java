@@ -1,10 +1,5 @@
 package Reflect;
- 
 
-
-import lombok.Getter;
-import lombok.Setter;
- 
 class Person implements China{
     public Person( ) {
          

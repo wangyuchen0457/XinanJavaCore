@@ -1,44 +1,38 @@
 package Reflect;
 
-import java.lang.reflect.Method;
+import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-
-class hello{
+class hello {
     public static void main(String[] args) {
-        Class<?> demo=null;
-        try{
-            demo=Class.forName("Reflect.Person");
-        }catch (Exception e) {
+        Class<?> demo = null;
+        try {
+            demo = Class.forName("Reflect.Person");
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        Method method[]=demo.getMethods();
-        for(int i=0;i<method.length;++i){
-            Class<?> returnType=method[i].getReturnType();
-            Class<?> para[]=method[i].getParameterTypes();
-            int temp=method[i].getModifiers();
-            System.out.print(Modifier.toString(temp)+" ");
-            System.out.print(returnType.getName()+"  ");
-            System.out.print(method[i].getName()+" ");
-            System.out.print("(");
-            for(int j=0;j<para.length;++j){
-                System.out.print(para[j].getName()+" "+"arg"+j);
-                if(j<para.length-1){
-                    System.out.print(",");
-                }
-            }
-            Class<?> exce[]=method[i].getExceptionTypes();
-            if(exce.length>0){
-                System.out.print(") throws ");
-                for(int k=0;k<exce.length;++k){
-                    System.out.print(exce[k].getName()+" ");
-                    if(k<exce.length-1){
-                        System.out.print(",");
-                    }
-                }
-            }else{
-                System.out.print(")");
-            }
-            System.out.println();
+        System.out.println("===============本类属性========================");
+        // 取得本类的全部属性
+        Field[] field = demo.getDeclaredFields();
+        for (int i = 0; i < field.length; i++) {
+            // 权限修饰符
+            int mo = field[i].getModifiers();
+            String priv = Modifier.toString(mo);
+            // 属性类型
+            Class<?> type = field[i].getType();
+            System.out.println(priv + " " + type.getName() + " "
+                    + field[i].getName() + ";");
+        }
+        System.out.println("===============实现的接口或者父类的属性========================");
+        // 取得实现的接口或者父类的属性
+        Field[] filed1 = demo.getFields();
+        for (int j = 0; j < filed1.length; j++) {
+            // 权限修饰符
+            int mo = filed1[j].getModifiers();
+            String priv = Modifier.toString(mo);
+            // 属性类型
+            Class<?> type = filed1[j].getType();
+            System.out.println(priv + " " + type.getName() + " "
+                    + filed1[j].getName() + ";");
         }
     }
 }
